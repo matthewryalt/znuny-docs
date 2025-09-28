@@ -3,9 +3,9 @@ import Layout from '@theme/Layout';
 
 export default function Home() {
   return (
-    <Layout title="Welcome to Znuny Docs" description="Documentation for Znuny setup and customization">
+    <Layout title="Welcome to the Squirrels Encyclopædia" description="Documentation for Znuny setup and customization">
       <main style={{ padding: '2rem' }}>
-        <h1>Welcome to teh Squiirels </h1>
+        <h1>Welcome to the Squirrels Encyclopædia</h1>
         <p>This site contains guides, setup instructions, and customization tips for Znuny.</p>
 
         <section>
@@ -17,7 +17,13 @@ export default function Home() {
          <section>
           <h2> ^=^t  Accounts Setup</h2>
           <p>Learn how the accounts work with Znuny</p>
-          <a href="/docs/dynamic-fields">Explore Dynamic Fields  ^f^r</a>
+          <a href="/docs/accounts">Explore Accounts  ^f^r</a>
+        </section>
+
+        <section>
+          <h2> ^=^t  How to sync files</h2>
+          <p>Learn how the synce file back to this project</p>
+          <a href="/docs/githubsync">Explore Git Hub Sync  ^f^r</a>
         </section>
       </main>
     </Layout>
