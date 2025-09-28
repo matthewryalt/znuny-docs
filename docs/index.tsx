@@ -8,6 +8,8 @@ export default function Home() {
         <h1>Welcome to the Squirrels Encyclopædia</h1>
         <p>This site contains guides, setup instructions, and customization tips for Znuny.</p>
 
+        <p>In case I forgot don't follow the standard install path, due to reasons  - '/usr/share/otrs'</p>
+
         <section>
           <h2>🔧 Dynamic Fields</h2>
           <p>Learn how to create, manage, and use dynamic fields in Znuny to customize your ticket workflows.</p>
