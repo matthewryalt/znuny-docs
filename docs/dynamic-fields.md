@@ -22,5 +22,5 @@ You can display dynamic fields in:
 - Ticket Email (outbound)Ticket::Frontend::AgentTicketEmail###DynamicField
 - Ticket Search (to be added)
 
-For advanced usage, check out the [Znuny documentation](https://doc.znuny.org/).
+For advanced usage, check out the [Znuny documentation](https://doc.znuny.org/legacy/manual/admin/6.0/en/html/dynamicfields.html#dynamicfields-configuration).
 
