@@ -8,11 +8,11 @@ This site helps you remeber how the fuck things work :)
 
 ##🔧 Dynamic Fields
           Learn how to create, manage, and use dynamic fields in Znuny to customize your ticket workflows
-          [Go to Dynamic Fields →](./docs/dynamic-fields.md)
+          [Go to Dynamic Fields →](./dynamic-fields.md)
 
 ##🖱️Accounts Setup
           Learn how the accounts work with Znuny</p>
-          [Go to Account →](./docs/accunts.md)
+          [Go to Account →](./accunts.md)
 
 ## 🎟️ Encyclopædia
 Explore Znuny features, workflows, and best practices.
