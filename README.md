@@ -1,41 +1,25 @@
-# Website
+# Welcome to Encyclopædia (Znuny Docs)
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This site helps you remeber how the fuck things work :)
 
-## Installation
+#Welcome to the Squirrels Encyclopædia
 
-```bash
-yarn
-```
+  In case I forgot don't follow the standard install path, due to reasons  - '/usr/share/otrs'
 
-## Local Development
+##🔧 Dynamic Fields
+          Learn how to create, manage, and use dynamic fields in Znuny to customize your ticket workflows
+          [Go to Dynamic Fields →](./dynamic-fields.md)
 
-```bash
-yarn start
-```
+##🖱️Accounts Setup
+          Learn how the accounts work with Znuny</p>
+          [Go to Account →](./accunts.md)
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## 🎟️ Encyclopædia
+Explore Znuny features, workflows, and best practices.
 
-## Build
+[Go to Encyclopædia →](./encyclopaedia.md)
 
-```bash
-yarn build
-```
+## 🔧 Dynamic Fields
+Learn how to create and use dynamic fields.
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+[Go to Dynamic Fields →](./dynamic-fields.md)
