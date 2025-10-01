@@ -23,3 +23,5 @@ Explore Znuny features, workflows, and best practices.
 Learn how to create and use dynamic fields.
 
 [Go to Dynamic Fields →](./dynamic-fields.md)
+
+Made a new account called basicaccount to load extra Repos, then forgot there is no sudo instal as it is TurnKey Linux .. opps (password is admin default)
