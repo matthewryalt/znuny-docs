@@ -1,0 +1,20 @@
+# Backup in Znuny
+
+Daliy  backups of SQL DB
+## Locations
+
+1. /var/backups/otrs - Local Storage
+2. /mnt/znuny - Mount Location
+3. \\192.168.147.110/znuny  Shared folder through OneDrive (instead of messing around with rsync and onedrive)
+
+## Code
+`#!/bin/bash
+
+# Timestamp
+DATE=$(date +%F_%H-%M)
+
+# Backup destination
+BACKUP_FILE="/mnt/znuny/znuny_backup_$DATE.sql"
+
+# Run the backup
+mysqldump -u root otrs > "$BACKUP_FILE"`
