@@ -16,7 +16,7 @@ This guide covers setting up automated Let's Encrypt SSL certificates using Dock
 4. [Certificate Registration and Issuance](#certificate-registration-and-issuance)
 5. [Automatic Renewal](#automatic-renewal)
 6. [Deploying to Apache Servers](#deploying-to-apache-servers)
-7. [Webmin Configuration](#webmin-configuration)
+
 
 ## Initial Setup
 
@@ -190,60 +190,3 @@ Add line:
 0 2 * * * /usr/local/bin/check-cert-reload.sh
 ``
 
-## Webmin Configuration
-
-## Troubleshooting
-### Certificate not renewing
-
-Check container logs:
-```bash
-docker-compose logs acme
-```
-
-Manually renew:
-```bash
-docker-compose run --rm acme --renew-all --server letsencrypt --force
-```
-
-### Mount not working
-
-Verify Windows share is accessible:
-```bash
-smbclient -L //YOUR-WINDOWS-IP -U your-username
-```
-
-Test mount manually:
-```bash
-mount -t cifs //YOUR-WINDOWS-IP/acme-certs /mnt/certs -o username=your-user,password=your-pass
-```
-
-### Apache not loading certificate
-
-Check Apache error logs:
-```bash
-tail -f /var/log/apache2/error.log
-```
-
-Verify certificate files are readable:
-```bash
-ls -la /mnt/certs/yourdomain.com/
-```
-
-Test Apache configuration:
-```bash
-apache2ctl configtest
-```
-
-## Security Notes
-
-- Store Cloudflare API token securely
-- Use restricted API tokens (not Global API Key)
-- Limit SMB share permissions to read-only
-- Protect `.smbcredentials` file with chmod 600
-- Regularly update acme.sh container: `docker-compose pull`
-
-## Additional Resources
-
-- [acme.sh Documentation](https://github.com/acmesh-official/acme.sh)
-- [Let's Encrypt Documentation](https://letsencrypt.org/docs/)
-- [Cloudflare API Documentation](https://developers.cloudflare.com/api/)
