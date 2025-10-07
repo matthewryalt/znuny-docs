@@ -16,7 +16,7 @@ This site helps you remeber how the fuck things work :)
 
 ##🗄️Backup Setup
           Learn how the backups work with Znuny
-          [Go to Account →](./backups.md)
+          [Go to Backups →](./backups.md)
 
 ##🔏 Lets Encrypt
           Znuny is now secure"-ish"
