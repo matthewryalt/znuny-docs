@@ -1,6 +1,6 @@
 # Welcome to Encyclopædia (Znuny Docs)
 
-This site helps you remeber how the fuck things work :)
+This site helps you remember how the fuck things work :)
 
 #Welcome to the Squirrels Encyclopædia
 
