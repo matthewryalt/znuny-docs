@@ -1,20 +1,15 @@
 # Backup in Znuny
 
-Daliy  backups of SQL DB
-## Locations
+Daliy backups of the entire server
+## Software
 
-1. /var/backups/otrs - Local Storage
-2. /mnt/znuny - Mount Location
-3. \\192.168.147.110/znuny  Shared folder through OneDrive (instead of messing around with rsync and onedrive)
+Veeam Agent for Linux (free Edition)
 
-## Code
-`#!/bin/bash
-
-# Timestamp
-DATE=$(date +%F_%H-%M)
-
-# Backup destination
-BACKUP_FILE="/mnt/znuny/znuny_backup_$DATE.sql"
-
-# Run the backup
-mysqldump -u root otrs > "$BACKUP_FILE"`
+Job name: FullServer
+                       Destination │
+                       Network     │ Destination: //192.168.147.105/Veeambackups
+                       Schedule    │ Backup: Entire computer
+                     > Summary     │ Schedule: Daily at 00:30
+                                   │
+                                   │ To start the job out of schedule execute:
+                                   │ veeamconfig job start --name "FullServer"
