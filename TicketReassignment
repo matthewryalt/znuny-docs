@@ -1,0 +1,27 @@
+# Znuny Ticket Customer Reassignment Script (GLaDOS Edition)
+
+## Overview
+This script allows admins to **reassign tickets** in Znuny to a different customer safely.  
+Includes **interactive prompts**, **single password entry**, and **GLaDOS-style humor** for fun during maintenance.
+
+## Features
+- Interactive prompts for **ticket number** and **customer username**
+- Verification that the customer exists in `customer_user`
+- Updates both:
+  - `ticket.customer_user_id` and `ticket.customer_id`
+  - `article_data_mime.a_from` to match the new customer
+- Clears the terminal at **start and end** for a clean interface
+- Single MySQL password prompt
+- GLaDOS-style messages for entertainment
+
+## Requirements
+- Turnkey Linux / Debian console
+- MySQL root credentials
+- Znuny database (`otrs`) accessible by MySQL user
+
+## Usage
+
+1. Save script as:
+
+```bash
+/usr/share/otrs/scripts/znuny-change-customer-glados.sh
